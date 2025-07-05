@@ -1,0 +1,42 @@
+.profile-picture-root {
+  outline: none;
+}
+
+.profile-picture-gradient {
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 2px;
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f472b6 100%);
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.10);
+}
+
+.profile-picture-tooltip {
+  position: absolute;
+  z-index: 20;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #111827;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  max-width: 20rem;
+  text-align: center;
+  word-break: break-word;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.profile-picture-tooltip-horizontal {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .profile-picture-tooltip {
+    background-color: #1f2937;
+  }
+} 

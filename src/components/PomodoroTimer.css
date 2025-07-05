@@ -1,0 +1,124 @@
+.pomodoro-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+}
+
+.pomodoro-container.dark {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+}
+
+.pomodoro-timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pomodoro-session-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.pomodoro-time-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pomodoro-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pomodoro-button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.pomodoro-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.pomodoro-settings-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  color: black;
+  min-width: 300px;
+}
+
+.pomodoro-settings-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.pomodoro-input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pomodoro-label {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.pomodoro-input {
+  width: 60px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.pomodoro-input:focus {
+  outline: none;
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.pomodoro-apply-button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #3B82F6;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pomodoro-apply-button:hover {
+  background-color: #2563EB;
+}
+
+.pomodoro-apply-button:active {
+  transform: translateY(1px);
+} 

@@ -1,0 +1,7 @@
+.dashboard-progress-bar {
+  width: 0%;
+  transition: width 0.3s;
+}
+.dashboard-progress-bar[data-progress-width] {
+  width: attr(data-progress-width);
+} 
